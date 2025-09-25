@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "OWASP Top 10",
+    "description": "A list of the most critical web application security risks.",
+    "category": "Web Security",
+    "link": "https://owasp.org/www-project-top-ten/"
+  },
+  {
+    "id": 2,
+    "title": "TryHackMe",
+    "description": "Hands-on cybersecurity training through gamified labs.",
+    "category": "CTFs",
+    "link": "https://tryhackme.com/"
+  },
+  {
+    "id": 3,
+    "title": "Cisco Networking Academy",
+    "description": "Free networking and security courses.",
+    "category": "Networking",
+    "link": "https://www.netacad.com/"
+  }
+]
