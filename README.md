@@ -29,7 +29,7 @@ A **web-based dashboard** for exploring cybersecurity learning resources. Users 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/elmaejupi/cybersecurity-dashboard.git
-cd cyber-dashboard
+cd cybersecurity-dashboard
 
 ### 2. Install dependencies
 ```bash
