@@ -38,7 +38,6 @@ npm start
 ```
 
 * Opens the app at `http://localhost:3000`.
-* The page reloads automatically on code changes.
 
 ---
 
