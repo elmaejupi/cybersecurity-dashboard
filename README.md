@@ -26,12 +26,17 @@ A **web-based dashboard** for exploring cybersecurity learning resources. Users 
 
 ## Getting Started
 
-### 1. Install dependencies
+### 1. Clone the repository
+```bash
+git clone https://github.com/elmaejupi/cybersecurity-dashboard.git
+cd cyber-dashboard
+
+### 2. Install dependencies
 ```bash
 npm install
 ````
 
-### 2. Start the development server
+### 3. Start the development server
 
 ```bash
 npm start
