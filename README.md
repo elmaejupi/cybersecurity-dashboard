@@ -1,6 +1,3 @@
-Absolutely! Here’s the full **README.md** you can copy and paste directly into your project:
-
-```markdown
 # Cybersecurity Learning Dashboard
 
 A **web-based dashboard** for exploring cybersecurity learning resources. Users can browse resources, filter by category, and switch between light and dark mode. Built with **React** and **Tailwind CSS**.
