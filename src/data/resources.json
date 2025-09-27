@@ -19,5 +19,54 @@
     "description": "Free networking and security courses.",
     "category": "Networking",
     "link": "https://www.netacad.com/"
+  },
+  {
+    "id": 4,
+    "title": "Hack The Box",
+    "description": "A platform for penetration testing and CTF challenges.",
+    "category": "CTFs",
+    "link": "https://www.hackthebox.eu/"
+  },
+  {
+    "id": 5,
+    "title": "PortSwigger Web Security Academy",
+    "description": "Free web security training with interactive labs.",
+    "category": "Web Security",
+    "link": "https://portswigger.net/web-security"
+  },
+  {
+    "id": 6,
+    "title": "Crypto101",
+    "description": "Introduction to cryptography for developers.",
+    "category": "Cryptography",
+    "link": "https://crypto101.io/"
+  },
+  {
+    "id": 7,
+    "title": "AWS Security Labs",
+    "description": "Hands-on labs for learning cloud security.",
+    "category": "Cloud Security",
+    "link": "https://aws.amazon.com/training/learn-about/security/"
+  },
+  {
+    "id": 8,
+    "title": "REMnux",
+    "description": "Tools and resources for malware analysis.",
+    "category": "Malware Analysis",
+    "link": "https://remnux.org/"
+  },
+  {
+    "id": 9,
+    "title": "OverTheWire",
+    "description": "Beginner-friendly CTF challenges for learning hacking basics.",
+    "category": "CTFs",
+    "link": "https://overthewire.org/wargames/"
+  },
+  {
+    "id": 10,
+    "title": "Cybrary",
+    "description": "Free and paid courses for cybersecurity, networking, and IT.",
+    "category": "General Security",
+    "link": "https://www.cybrary.it/"
   }
 ]

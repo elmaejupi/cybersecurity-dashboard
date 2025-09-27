@@ -1,30 +1,46 @@
-import React, { useState } from "react";
-import resourcesData from "./data/resources.json";
+import React, { useState, useEffect } from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import ResourceCard from "./components/ResourceCard";
+import resources from "./data/resources.json";
 
 function App() {
-  const [filter, setFilter] = useState("");
+  //this part manages the themes, filtering, and the search logic
   const [theme, setTheme] = useState("light");
+  const [filter, setFilter] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
 
-  const filteredResources = filter
-    ? resourcesData.filter((r) => r.category === filter)
-    : resourcesData;
+  const filteredResources = resources.filter((r) => {
+    const matchesCategory = filter ? r.category === filter : true;
+    const matchesSearch = searchQuery
+      ? r.title.toLowerCase().includes(searchQuery.toLowerCase())
+      : true;
+    return matchesCategory && matchesSearch;
+  });
 
   return (
-    <div className={theme === "light" ? "bg-gray-100 min-h-screen" : "bg-gray-900 text-white min-h-screen"}>
+     // build the main page layout that is header, search bar, and resource cards, styled with light and dark mode
+    <div className="min-h-screen bg-slate-50 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500">
       <Header toggleTheme={toggleTheme} theme={theme} />
-      <SearchBar setFilter={setFilter} />
-      <div className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredResources.map((res) => (
-          <ResourceCard key={res.id} resource={res} />
+      <SearchBar setFilter={setFilter} setSearchQuery={setSearchQuery} />
+
+      <main className="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredResources.map((resource) => (
+          <ResourceCard key={resource.id} resource={resource} />
         ))}
-      </div>
+      </main>
     </div>
   );
 }
